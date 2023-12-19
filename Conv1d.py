@@ -29,7 +29,7 @@ import torch
 x_torch = torch.tensor([[1.,3,0,2,10,1,2,0]]) # This is a single channel
 
 algo = torch.nn.Conv1d(in_channels=1, out_channels = 1, kernel_size = 3)
-algo.weight.data = torch.tensor([[[1.0,2,3]]])
+algo.weight.data = torch.tensor([[[1.0,2,3]]]) # Weight MUST BE 3D no matter what input shape you give it, what kernel size you give it, or what output channel you want.
 algo.bias.data = torch.tensor([0.]) # Bias is how much you add the the convolution.
 y2 = algo(x_torch)
 
