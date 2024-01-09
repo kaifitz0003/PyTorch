@@ -5,7 +5,7 @@ import torch
 # Cout = out_channels (6)
 # K = kernel_size (2)
 # Lout = length of output signal (L-K+1)
-# Input dimensions are Cin x L
+# Input dimensions are N x Cin x L
 # Weight dimensions are Cout x Cin x K and K <= L
 # Output dimensions is 2d and is Cout x Lout
 
