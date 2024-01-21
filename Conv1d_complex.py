@@ -5,9 +5,11 @@ import torch
 # Cout = out_channels (6)
 # K = kernel_size (2)
 # Lout = length of output signal (L-K+1)
-# Input dimensions are N x Cin x L
-# Weight dimensions are Cout x Cin x K and K <= L
-# Output dimensions is 2d and is Cout x Lout
+# The Input is a 3d tensor and its dimensions are N x Cin x L
+# The Weight is a 3d tensor and its dimensions are Cout x Cin x K, where K <= L
+# The Bias is a 1d tensor and its dimensions are Cout
+# The Output is a 3d tensor and its dimensions are N x Cout x Lout, where Lout is (L - K + 1)
+
 
 # INPUT
 x = torch.tensor([[[ 1, 2, 3, 4],[ 5, 6, 7, 8],[ 9,10,11,12]],
