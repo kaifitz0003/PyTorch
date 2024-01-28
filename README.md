@@ -4,3 +4,6 @@ The manual calculations of how to do 1d convolution are shown here. The input ha
 
 The calculations below use the first 2d array in the data.
 ![Image](Conv1dcomplex.jpg)
+
+# 2d Convolution
+
