@@ -7,6 +7,13 @@ Convolution is where we have a kernel and a input. We slide the kernel over the 
 Below are the slides to 1D Convolution.
 ![Image](Title.png)
 ![Image](Notation.png)
+
+N is the number of inputs. For example, its how many days you are recording.
+L is the length. For example, its the number of cities you record.
+Cin is the number of input channels. For example, its the number of ways you recorded the data.
+
+![Image](conv1d.png)
+
 ![Image](Conv1d_1.png)
 ![Image](Conv1d_2.png)
 
