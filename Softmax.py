@@ -12,9 +12,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-z = torch.tensor([1.,4.,-1.])
+logits = torch.tensor([1.,4.,-1.])
 model = nn.Softmax(dim = 0) # Goes over the rows. Since the data is 1d, dim is not required. 
-model(z)
+model(logits)
 
 e = np.exp(1) # 2.718281, special number like pi
 e**1/(e**1+e**4+e**-1) # Does Softmax for 1. The output is 0.0471
